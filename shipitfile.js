@@ -5,9 +5,9 @@ module.exports = function (shipit) {
   require('shipit-cnpm')(shipit)
   shipit.initConfig({
     default: {
-      workspace: '/tmp/deploy/deploy-demo',
-      deployTo: '/home/work/deploy-demo',
-      repositoryUrl: 'https://github.com/568815707/deploy-demo.git',
+      workspace: '/tmp/deploy/mxx-project',
+      deployTo: '/home/work/mxx-project',
+      repositoryUrl: 'https://github.com/mengxxSELF/mxx-project.git',
       ignores: ['.git', 'node_modules'],
       keepReleases: 2,
       deleteOnRollback: false,
@@ -21,12 +21,12 @@ module.exports = function (shipit) {
       },
       pm: {
         production: {
-          path: '/home/work/deploy-demo/current/pm2/production.json'
+          path: '/home/work/mxx-project/current/pm2/production.json'
         }
       }
     },
     production: {
-      servers: ['root@39.106.194.105'],
+      servers: ['root@101.200.45.254'],
       branch: 'master'
     }
   })

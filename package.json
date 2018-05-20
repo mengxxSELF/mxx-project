@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "PORT=9090 nodemon bin/www",
+    "start": "PORT=9090 nodemon --harmony index.js",
     "webpack": "rm -rf public; webpack --watch",
     "server": "NODE_ENV=development PORT=9090 webpack-dev-server --open --colors",
     "dev": "./node_modules/.bin/nodemon bin/www",
