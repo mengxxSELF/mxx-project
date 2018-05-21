@@ -9,6 +9,8 @@ var index = require('./routes/index');
 // error handler
 onerror(app);
 
+console.log('111110e09e039090')
+
 // // global middlewares
 app.use(views('views', {
   // root: __dirname + '/public',
