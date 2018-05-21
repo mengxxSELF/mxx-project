@@ -9,8 +9,6 @@ var index = require('./routes/index');
 // error handler
 onerror(app);
 
-console.log('111110e09e039090')
-
 // // global middlewares
 app.use(views('views', {
   // root: __dirname + '/public',
@@ -57,7 +55,7 @@ var http = require('http');
 
 
 // var port = normalizePort(process.env.PORT || '6789');
-var port = 9090
+var port = 9093
 // app.set('port', port);
 
 /**
