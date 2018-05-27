@@ -7,7 +7,7 @@
     "webpack": "rm -rf public; webpack --watch",
     "server": "NODE_ENV=development PORT=9090 webpack-dev-server --open --colors",
     "dev": "./node_modules/.bin/nodemon bin/www",
-    "prd": "pm2 start bin/www",
+    "prd": "pm2 start index.js",
     "product": "NODE_ENV=production PORT=9090 webpack-dev-server --open --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -60,6 +60,8 @@
     "postcss-loader": "^2.0.9",
     "react-transform-hmr": "^1.0.4",
     "sass-loader": "^6.0.6",
+    "shipit-cnpm": "^0.7.0",
+    "shipit-deploy": "^4.1.0",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
     "webpack-dev-server": "^2.9.5"
