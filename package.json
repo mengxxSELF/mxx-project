@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "start": "PORT=9090 nodemon --harmony index.js",
+    "deploy": "shipit production deploy",
     "webpack": "rm -rf public; webpack --watch",
     "server": "NODE_ENV=development PORT=9090 webpack-dev-server --open --colors",
     "dev": "./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start index.js",
+    "pm2": "pm2 start pm2.config.json",
     "product": "NODE_ENV=production PORT=9090 webpack-dev-server --open --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
