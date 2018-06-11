@@ -56,6 +56,7 @@ var http = require('http');
 
 // var port = normalizePort(process.env.PORT || '6789');
 var port = 3389
+console.log(port, 'portportportportportportport');
 // app.set('port', port);
 
 /**
