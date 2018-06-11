@@ -3,10 +3,7 @@ const {miaopai, lyric} = require('../utils/api.js')
 const req = require('../utils/req.js')
 
 router.get('/', function * (next) {
-  console.log('kkkkkkkkkk')
-  yield this.render('index', {
-    title: '金木'
-  });
+  yield this.render('index')
 });
 
 // 解析秒拍视频真实地址
