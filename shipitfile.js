@@ -3,6 +3,7 @@
 module.exports = function (shipit) {
   require('shipit-deploy')(shipit)
   require('shipit-cnpm')(shipit)
+  require('shipit-pm')(shipit)
   shipit.initConfig({
     default: {
       workspace: '/tmp/deploy/mxx-project',
