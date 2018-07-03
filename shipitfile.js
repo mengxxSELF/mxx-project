@@ -26,13 +26,17 @@ module.exports = function (shipit) {
         }
       }
     },
+    production: {
+      servers: ['vbird2@101.200.45.254'],
+      branch: 'master'
+    },
     // production: {
     //   servers: ['root@101.200.45.254'],
     //   branch: 'master'
     // },
-    production: {
-      servers: ['root@47.104.231.146'],
-      branch: 'master'
-    }
+    // production: {
+    //   servers: ['root@47.104.231.146'],
+    //   branch: 'master'
+    // }
   })
 }
